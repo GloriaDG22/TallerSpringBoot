@@ -1,0 +1,19 @@
+management.endpoints.web.exposure.include: '*'
+
+server.port: 8090
+
+course:
+  message: "Message Prod"
+
+spring:
+  datasource:
+    url: jdbc:h2:file:/data/mydb
+    username: root
+    password: admin
+    driverClassName: org.h2.Driver
+  jpa:
+     database-platform: org.hibernate.dialect.H2Dialect
+  h2.console.enabled: true
+
+
+spring.profiles.active: prod
